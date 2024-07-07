@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="1520.0" style="-fx-background-color: #a4b0be;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashbordFormController">
+   <children>
+      <BorderPane prefHeight="679.0" prefWidth="214.0" style="-fx-background-color: #9AECDB;">
+         <top>
+            <ImageView fitHeight="169.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../image/WhatsApp_Image_2024-04-26_at_11.01.47_127b78f1-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="593.0" prefWidth="254.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton layoutX="52.0" layoutY="543.0" onAction="#logoutonaction" prefHeight="31.0" prefWidth="102.0" text="Logout">
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="button-64" />
+                        <String fx:value="gradient-button2" />
+                     </styleClass></JFXButton>
+                  <JFXButton layoutX="30.0" layoutY="16.0" onAction="#btnOnActionOrder" prefHeight="36.0" prefWidth="134.0" text="Order">
+                     <styleClass>
+                        <String fx:value="gradient-button1" />
+                        <String fx:value="button-65" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets></JFXButton>
+                  <JFXButton layoutX="33.0" layoutY="153.0" onAction="#btnCustomerOnAction" prefHeight="36.0" prefWidth="133.0" text="Customer">
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="gradient-button1" />
+                        <String fx:value="button-65" />
+                     </styleClass></JFXButton>
+                  <JFXButton layoutX="34.0" layoutY="220.0" onAction="#btnOnActionItem" prefHeight="36.0" prefWidth="132.0" text="Items">
+                     <styleClass>
+                        <String fx:value="button-65" />
+                        <String fx:value="gradient-button1" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets></JFXButton>
+                  <JFXButton layoutX="33.0" layoutY="286.0" onAction="#btnSupplierOnAction" prefHeight="36.0" prefWidth="134.0" text="Supplier">
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="button-65" />
+                        <String fx:value="gradient-button1" />
+                     </styleClass></JFXButton>
+                  <JFXButton layoutX="36.0" layoutY="352.0" onAction="#btnOnActionReturn" prefHeight="36.0" prefWidth="130.0" text="Exchange">
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="button-65" />
+                        <String fx:value="gradient-button1" />
+                     </styleClass></JFXButton>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="50.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="44.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-customer-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="50.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-item-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="49.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-supplier-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="44.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-order-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="48.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-return-purchase-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="58.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-logout-64.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="35.0" layoutY="415.0" onAction="#btnOnActionStore" prefHeight="36.0" prefWidth="130.0" text="Store">
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="button-65" />
+                        <String fx:value="gradient-button1" />
+                     </styleClass>
+                  </JFXButton>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="57.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-store-94.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="33.0" layoutY="83.0" onAction="#btnOnActionSupply" prefHeight="36.0" prefWidth="128.0" text="Supply">
+                     <styleClass>
+                        <String fx:value="gradient-button1" />
+                        <String fx:value="button-65" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@../css/button.css" />
+                        <URL value="@../css/button3.css" />
+                     </stylesheets>
+                  </JFXButton>
+                  <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="45.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-package-94.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+      <BorderPane fx:id="mainAnchopane" layoutX="214.0" prefHeight="765.0" prefWidth="1.0" />
+      <BorderPane layoutX="227.0" layoutY="-2.0" prefHeight="765.0" prefWidth="1294.0">
+         <top>
+            <AnchorPane prefHeight="76.0" prefWidth="1259.0" style="-fx-background-color: #9AECDB;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="dateLabel" layoutX="1172.0" layoutY="25.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeLabel" layoutX="1042.0" layoutY="25.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="13.0" prefHeight="58.0" prefWidth="837.0" styleClass="label-customized" stylesheets="@../css/rr.css" text="Welcome To The  Wijesinghe Grocery Store">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="52.0" fitWidth="69.0" layoutX="599.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gif/Star.gif" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="contentPane" prefHeight="690.0" prefWidth="1254.0" style="-fx-background-color: #9AECDB;" stylesheets="@../css/anchorpane.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="-1.0" layoutY="61.0" prefHeight="120.0" prefWidth="1292.0">
+                     <children>
+                        <AnchorPane prefHeight="120.0" prefWidth="218.0" stylesheets="@../css/anchorpane1.css">
+                           <styleClass>
+                              <String fx:value="gradient-button" />
+                              <String fx:value="shadowed-element2" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="122.0" text="Top Customer">
+                                 <font>
+                                    <Font name="Impact" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="topCustomerLabel" layoutX="34.0" layoutY="70.0" prefHeight="44.0" prefWidth="146.0">
+                                 <font>
+                                    <Font name="Impact" size="17.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="57.0" fitWidth="62.0" layoutX="134.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-human-resources-64.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="146.0" prefWidth="210.0" stylesheets="@../css/anchorpane1.css">
+                           <styleClass>
+                              <String fx:value="gradient-button1" />
+                              <String fx:value="shadowed-element2" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="240.0" />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="15.0" layoutY="18.0" prefHeight="39.0" prefWidth="122.0" text="Top Selling Items">
+                                 <font>
+                                    <Font name="Impact" size="17.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="54.0" fitWidth="56.0" layoutX="163.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-open-box-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="topSellingItemLabel" layoutX="14.0" layoutY="77.0" prefHeight="44.0" prefWidth="146.0">
+                                 <font>
+                                    <Font name="Impact" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="114.0" prefWidth="214.0" stylesheets="@../css/anchorpane1.css">
+                           <styleClass>
+                              <String fx:value="gradient-button2" />
+                              <String fx:value="shadowed-element2" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="240.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label layoutX="20.0" layoutY="14.0" prefHeight="46.0" prefWidth="107.0" text="Order Count">
+                                 <font>
+                                    <Font name="Impact" size="17.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="64.0" fitWidth="54.0" layoutX="133.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/icons8-basket-64.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="orderCountLabel" layoutX="14.0" layoutY="78.0" prefHeight="44.0" prefWidth="146.0">
+                                 <font>
+                                    <Font name="Impact" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="482.0" fitWidth="667.0" layoutX="67.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/5106d228-bd13-4b0e-b46c-e67ed69af184-cover-removebg-preview.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="327.0" fitWidth="466.0" layoutX="795.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/pie-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+
+               </children></AnchorPane>
+         </left>
+      </BorderPane>   </children>
+</AnchorPane>

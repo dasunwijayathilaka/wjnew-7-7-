@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1296.0" style="-fx-background-color: #9AECDB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">
+   <children>
+      <AnchorPane fx:id="mainAnchopane" layoutX="1.0" prefHeight="690.0" prefWidth="214.0" style="-fx-background-color: #9AECDB;">
+         <children>
+            <Label fx:id="user" layoutX="30.6" layoutY="23.0" text="Customer Manage" textFill="#2c3e50" AnchorPane.leftAnchor="30.6">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="83.0" text="Customer ID" />
+            <Label layoutX="33.0" layoutY="173.0" text="Customer Name" />
+            <Label layoutX="33.0" layoutY="267.0" text="Customer Address" />
+            <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="628.0" onAction="#btnBackOnAction" prefHeight="30.0" prefWidth="99.0" stylesheets="@../css/button.css" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="gradient-button7" />
+                  <String fx:value="button-64" />
+               </styleClass>
+            </JFXButton>
+            <Label layoutX="36.0" layoutY="359.0" text="Customer Tel" />
+            <Label layoutX="34.0" layoutY="531.0" text="loyalty point" />
+            <Label layoutX="33.0" layoutY="447.0" text="Customer Email" />
+            <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="77.0" layoutY="637.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-back-94.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtCustomerName" layoutX="30.0" layoutY="207.0" onKeyReleased="#txtCustomerNameOnKeyReleased" prefHeight="26.0" prefWidth="174.0" />
+            <JFXTextField fx:id="txtloyaltypoint" layoutX="30.0" layoutY="559.0" onKeyReleased="#txtloyaltypointOnKeyReleased" prefHeight="26.0" prefWidth="177.0" />
+            <JFXTextField fx:id="txtCustomerEmail" layoutX="31.0" layoutY="476.0" onKeyReleased="#txtCustomerEmailOnKeyReleased" prefHeight="26.0" prefWidth="174.0" />
+            <JFXTextField fx:id="txtCustomerTel" layoutX="30.0" layoutY="388.0" onKeyReleased="#txtCustomerTelOnKeyReleased" prefHeight="26.0" prefWidth="174.0" />
+            <JFXTextField fx:id="txtCustomerAddress" layoutX="29.0" layoutY="302.0" onKeyReleased="#txtCustomerAddressOnKeyReleased" prefHeight="26.0" prefWidth="174.0" />
+            <JFXTextField fx:id="txtCustomerID" layoutX="30.0" layoutY="113.0" onAction="#txtCustomerIdOnAction" onKeyReleased="#txtCustomerIDOnKeyReleased" prefHeight="26.0" prefWidth="174.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabelcustomer" layoutX="228.19999999999982" layoutY="39.2" prefHeight="562.0" prefWidth="1038.0" stylesheets="@../css/button.css" AnchorPane.rightAnchor="29.40000000000009" AnchorPane.topAnchor="39.2">
+         <columns>
+            <TableColumn fx:id="colCustomerID" prefWidth="89.5999755859375" text="Customer ID" />
+            <TableColumn fx:id="colCustomerName" prefWidth="185.60003662109375" text="Customer Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="245.59988403320312" text="Customer Address" />
+            <TableColumn fx:id="colCustomerTel" prefWidth="168.00006103515625" text="Customer Tel" />
+            <TableColumn fx:id="colCustomerEmail" minWidth="0.0" prefWidth="232.0" text="Customer Email" />
+            <TableColumn fx:id="colloyaltypoint" prefWidth="119.20001220703125" text="loyalty point" />
+         </columns>
+      </TableView>
+      <Line endX="116.19996643066406" layoutX="67.0" layoutY="58.0" startX="-23.000049591064453" stroke="#636e72" />
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="503.0" layoutY="625.0" onAction="#btnClearOnAction" prefHeight="27.0" prefWidth="115.0" stylesheets="@../css/button.css" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-clear-94.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="gradient-button1" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="646.0" layoutY="625.0" onAction="#btnDeleteOnAction" prefHeight="27.0" prefWidth="118.0" stylesheets="@../css/button.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-delete-188.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="gradient-button2" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="794.0" layoutY="628.0" onAction="#btnUpdateOnAction" prefHeight="36.0" prefWidth="112.0" stylesheets="@../css/button.css" text="Update" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="gradient-button4" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="936.0" layoutY="629.0" onAction="#btnSaveOnAction" prefHeight="36.0" prefWidth="113.0" stylesheets="@../css/button.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="gradient-button5" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="1011.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-today-94.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="873.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-update-94.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

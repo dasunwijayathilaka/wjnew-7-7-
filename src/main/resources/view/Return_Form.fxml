@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1302.0" style="-fx-background-color: #9AECDB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ReturnFormController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="688.0" prefWidth="226.0" style="-fx-background-color: #9AECDB;">
+         <children>
+            <Label layoutX="29.0" layoutY="20.0" text="Return &amp; Exchange" textFill="#2c3e50" AnchorPane.leftAnchor="29.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="625.0" onAction="#btnBackOnAction" prefHeight="16.0" prefWidth="106.0" stylesheets="@../css/button.css" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="gradient-button7" />
+                  <String fx:value="button-64" />
+               </styleClass>
+            </JFXButton>
+            <Line endX="129.06666564941406" layoutX="59.0" layoutY="52.0" startX="-23.000049591064453" />
+            <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="75.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-back-94.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtReturnID" labelFloat="true" layoutX="39.0" layoutY="102.0" onAction="#txtReturnIDOnAction" onKeyReleased="#txtReturnIDOnKeyReleased" promptText="ID" />
+            <JFXTextField fx:id="txtOrderID" labelFloat="true" layoutX="37.0" layoutY="163.0" onKeyReleased="#txtOrderIDOnKeyReleased" promptText="Order ID" />
+            <JFXTextField fx:id="txtReturnReason" labelFloat="true" layoutX="34.0" layoutY="225.0" onKeyReleased="#txtReturnReasononOnKeyReleased" promptText="Reason" />
+            <JFXTextField fx:id="txtReturnStatus" labelFloat="true" layoutX="33.0" layoutY="290.0" onKeyReleased="#txtReturnStatusOnKeyReleased" promptText="Status" />
+            <JFXTextField fx:id="txtExchangeRequest" labelFloat="true" layoutX="34.0" layoutY="354.0" onKeyReleased="#txtExchangeRequestOnKeyReleased" promptText="Request" />
+            <JFXTextField fx:id="txtReturnDate" labelFloat="true" layoutX="33.0" layoutY="421.0" onKeyReleased="#txtReturnDateOnKeyReleased" promptText="Date" />
+            <JFXTextField fx:id="txtRefundAmount" labelFloat="true" layoutX="34.0" layoutY="491.0" onKeyReleased="#txtRefundAmountOnKeyReleased" promptText="Amount" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblReturnExchange" layoutX="238.0" layoutY="39.0" prefHeight="562.0" prefWidth="1043.0">
+         <columns>
+            <TableColumn fx:id="colReturnID" prefWidth="109.33328247070312" text="Return ID" />
+            <TableColumn fx:id="colOrderID" prefWidth="106.666748046875" text="orderID" />
+            <TableColumn fx:id="colReturnReason" prefWidth="142.40008544921875" text="Return Reason" />
+            <TableColumn fx:id="colReturnStatus" prefWidth="147.46685791015625" text="Return Status" />
+            <TableColumn fx:id="colExchangeRequest" prefWidth="168.800048828125" text="Exchange Request" />
+            <TableColumn fx:id="colReturnDate" prefWidth="175.73345947265625" text="Return Date" />
+            <TableColumn fx:id="colRefundAmount" prefWidth="211.7333984375" text="Refund Amount" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="464.0" layoutY="622.0" onAction="#btnClearOnAction" prefHeight="27.0" prefWidth="115.0" stylesheets="@../css/button.css" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-clear-94.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="gradient-button1" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="607.0" layoutY="622.0" onAction="#btnDeleteOnAction" prefHeight="27.0" prefWidth="118.0" stylesheets="@../css/button.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-delete-188.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="gradient-button2" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="755.0" layoutY="625.0" onAction="#btnUpdateOnAction" prefHeight="36.0" prefWidth="112.0" stylesheets="@../css/button.css" text="Update" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="gradient-button4" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="897.0" layoutY="626.0" onAction="#btnSaveOnAction" prefHeight="36.0" prefWidth="113.0" stylesheets="@../css/button.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="gradient-button5" />
+            <String fx:value="button-63" />
+         </styleClass>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="972.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-today-94.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="23.0" layoutX="834.0" layoutY="633.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-update-94.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

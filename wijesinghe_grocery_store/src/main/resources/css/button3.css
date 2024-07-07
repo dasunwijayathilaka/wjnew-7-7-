@@ -1,0 +1,107 @@
+/* Normal state of the button */
+.gradient-button1 {
+    -fx-background-color: linear-gradient(to bottom, #182a33 0%, #071851 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+.gradient-button2 {
+    -fx-background-color: linear-gradient(to bottom, #f64e63 0%, #67000c 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+
+/* Hover state of the button */
+.gradient-button:hover {
+    -fx-scale-x: 1.05; /* Slightly increases the scale of X axis */
+    -fx-scale-y: 1.05; /* Slightly increases the scale of Y axis */
+}
+.gradient-button3{
+    -fx-background-color: linear-gradient(to bottom, #36a5ef 0%, #071851 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-block-text-centered: true;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+
+
+.gradient-button4 {
+    -fx-background-color: linear-gradient(to bottom, #fbcb41 0%, #05ffc5 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-block-text-centered: true;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+
+
+.gradient-button5{
+    -fx-background-color: linear-gradient(to bottom, #f855f0 0%, #05ffc5 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-block-text-centered: true;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+
+.gradient-button6 {
+    -fx-background-color: linear-gradient(to bottom, #3a2c04 0%, #05ffc5 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+
+
+
+
+
+.gradient-button7 {
+    -fx-background-color: linear-gradient(to bottom, #05ffc5 0%, #0a0b0a 100%);
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 10pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-scale-x: 1; /* Scale for X axis */
+    -fx-scale-y: 1; /* Scale for Y axis */
+    -fx-cursor: hand; /* Changes cursor to a hand when hovered over the button */
+}
+.button-63:hover {
+    -fx-effect: dropshadow(three-pass-box, rgb(41, 87, 207), 30,0,0,15);
+}
