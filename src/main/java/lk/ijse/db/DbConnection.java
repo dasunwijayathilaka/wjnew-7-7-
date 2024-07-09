@@ -30,6 +30,7 @@ public class DbConnection {
         return dbConnection;
     }
 
+
     public Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
             connection = DriverManager.getConnection(
@@ -39,6 +40,9 @@ public class DbConnection {
             );
         }
         return connection;
+
+
+    }
 }
 
-}
+
