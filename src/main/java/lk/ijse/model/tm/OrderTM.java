@@ -1,7 +1,7 @@
-package lk.ijse.model.tm;
+package lk.ijse.entity.tm;
 
 import com.jfoenix.controls.JFXButton;
-import lk.ijse.model.OrderDetail;
+import lk.ijse.entity.OrderDetail;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

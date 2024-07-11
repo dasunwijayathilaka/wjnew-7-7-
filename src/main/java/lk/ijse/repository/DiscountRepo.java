@@ -1,7 +1,7 @@
 package lk.ijse.repository;
 
 import lk.ijse.db.DbConnection;
-import lk.ijse.model.Discount;
+import lk.ijse.entity.Discount;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

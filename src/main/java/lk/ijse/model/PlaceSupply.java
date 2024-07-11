@@ -1,6 +1,6 @@
-package lk.ijse.model;
+package lk.ijse.entity;
 
-import lk.ijse.model.tm.CartItem;
+import lk.ijse.entity.tm.CartItem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

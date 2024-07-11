@@ -1,7 +1,7 @@
 package lk.ijse.repository;
 
 import lk.ijse.db.DbConnection;
-import lk.ijse.model.returnexchange;
+import lk.ijse.entity.returnexchange;
 
 import java.sql.*;
 import java.util.ArrayList;

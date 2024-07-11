@@ -18,9 +18,9 @@ import javafx.stage.Stage;
 
 import lk.ijse.Util.Regex;
 import lk.ijse.Util.TextField;
-import lk.ijse.model.Supplier;
+import lk.ijse.entity.Supplier;
 
-import lk.ijse.model.tm.SupplierrTm;
+import lk.ijse.entity.tm.SupplierrTm;
 
 import lk.ijse.repository.SupplierRepo;
 

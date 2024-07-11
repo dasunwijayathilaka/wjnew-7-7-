@@ -15,7 +15,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.db.DbConnection;
-import lk.ijse.model.Store;
+import lk.ijse.entity.Store;
 import lk.ijse.repository.StoreRepo;
 
 import java.io.IOException;

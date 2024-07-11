@@ -1,7 +1,7 @@
 package lk.ijse.repository;
 
 import lk.ijse.db.DbConnection;
-import lk.ijse.model.PlaceSupply;
+import lk.ijse.entity.PlaceSupply;
 
 import java.sql.Connection;
 import java.sql.SQLException;

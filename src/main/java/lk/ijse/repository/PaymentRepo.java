@@ -1,7 +1,7 @@
 package lk.ijse.repository;
 
 import lk.ijse.db.DbConnection;
-import lk.ijse.model.Payment;
+import lk.ijse.entity.Payment;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

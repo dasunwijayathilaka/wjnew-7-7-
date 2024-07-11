@@ -17,8 +17,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.Util.Regex;
 import lk.ijse.Util.TextField;
-import lk.ijse.model.Item;
-import lk.ijse.model.tm.ItemTM;
+import lk.ijse.entity.Item;
+import lk.ijse.entity.tm.ItemTM;
 import lk.ijse.repository.ItemRepo;
 
 import java.io.IOException;

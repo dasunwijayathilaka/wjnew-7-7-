@@ -17,10 +17,10 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.Util.Regex;
 import lk.ijse.Util.TextField;
-import lk.ijse.model.Customer;
-import lk.ijse.model.Store;
+import lk.ijse.entity.Customer;
+import lk.ijse.entity.Store;
 
-import lk.ijse.model.tm.StoreTM;
+import lk.ijse.entity.tm.StoreTM;
 import lk.ijse.repository.CustomerRepo;
 import lk.ijse.repository.StoreRepo;
 

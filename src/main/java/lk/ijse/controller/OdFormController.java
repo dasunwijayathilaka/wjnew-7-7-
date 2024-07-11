@@ -11,8 +11,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import lk.ijse.model.*;
-import lk.ijse.model.tm.OrderTM;
+import lk.ijse.entity.*;
+import lk.ijse.entity.tm.OrderTM;
 import lk.ijse.repository.*;
 
 import java.net.URL;

@@ -18,8 +18,8 @@ import javafx.stage.Stage;
 
 import lk.ijse.Util.Regex;
 import lk.ijse.Util.TextField;
-import lk.ijse.model.returnexchange;
-import lk.ijse.model.tm.ReturnTM;
+import lk.ijse.entity.returnexchange;
+import lk.ijse.entity.tm.ReturnTM;
 import lk.ijse.repository.ReturnRepo;
 
 import java.io.IOException;
